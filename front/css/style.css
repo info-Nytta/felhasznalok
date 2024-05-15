@@ -1,0 +1,121 @@
+:root {
+	--light: #eee;
+	--dark:	gray;
+	--link: lightblue;
+}
+
+html {scroll-behavior: smooth;}
+* { box-sizing: border-box;}
+body { 
+	background-color: var(--dark); 
+	font-family: Verdana;
+	margin: 0;
+}
+a { 
+	text-decoration: none;
+	padding: 3px 10px;
+	border-radius: 5px;
+}
+header { 
+	background-color: var(--light);
+	width: 100%;
+}
+nav { 
+	background-color: var(--light);
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+	margin: 0 0 5px 0;
+	color: var(--dark) ;
+	border-top:1px var(--dark) solid;
+	border-bottom:1px var(--dark) solid;
+	box-shadow: 1px 1px 15px var(--light);
+	font-variant: small-caps;
+}
+nav a { color: var(--dark); }
+nav a:hover { 
+	background-color: var(--dark);
+	color: var(--light) 
+}
+#hambi {
+	text-align: right;
+	padding: 10px 20px;
+	font-size: 150%;
+}
+#menulista {
+	list-style: none;
+	display: none;
+	font-size: 90%;
+	padding:0
+} 
+main { 
+	max-width: 95%;
+	margin: auto;
+	padding: 50px 0 150px 0; 
+	overflow: auto;
+	color: var(--light);
+	line-height:1.5em}
+main a { color: var(--link); }
+main a:hover { 
+	background-color: var(--link); 
+	color: var(--dark);
+}
+.page {
+	max-width:800px;
+	margin:auto;
+}
+h1, h2 { text-align:center;}
+p {margin: 50px auto; text-align:justify;}
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }
+
+form img {
+	vertical-align: middle;
+	width:20px;
+}
+footer { width: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: var(--light);
+	margin-top: 5px;
+	padding: 50px;
+	color: var(--dark); 
+	border-top:1px var(--dark) solid;
+	box-shadow: -1px -1px 15px var(--light)}
+footer div {display: inline;}
+footer div.autor { float:left;}
+footer div.link { float: right;}
+footer a { color: var(--dark); }
+footer a:hover { text-decoration:underline; }
+#up {
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	border: 2px solid var(--dark);
+	color: var(--dark);
+	background-color: var(--light);
+	height: 50px;
+	width: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 2px;
+	border-radius: 50%; 
+}
+a#up:hover {text-decoration:none;}
+
+@media screen and (min-width:600px)
+{
+	#up { display: none; }
+	#hambi { display: none; }
+	#menulista { display: block; }
+	nav ul li.menupont { display: inline-block; }
+}
+
+@media screen and (max-width:600px) {
+	p {margin: 30px auto; text-align:left;}
+	h1 { margin-top: 10px; }
+	.menupont { line-height:2.5em; }
+	.no-mobil {display: none;}
+}
