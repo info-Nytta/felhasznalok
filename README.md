@@ -1,2 +1,3 @@
 # felhasznalok
-felhasználókezelés
+Exercise for my students 
+
